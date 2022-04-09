@@ -15,6 +15,6 @@ paswd = ''
 
 while paswd != 'quit':
     paswd = input(sec)
-# 退出后不显示"quit"
-if paswd == 'input':
-    print (paswd)
+# 退出后不显示"quit",加入一个if判断,只有当不等于quit时才打印
+    if paswd != 'quit':
+        print (paswd)
