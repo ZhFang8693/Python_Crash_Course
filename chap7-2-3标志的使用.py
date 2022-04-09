@@ -12,3 +12,4 @@ while activation :
         activation = False
     else:
         print(showing)
+#这里也会实现输入quit时不打印
