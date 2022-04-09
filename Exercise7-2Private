@@ -4,7 +4,7 @@ shown = "Show me the city u favor it, and if u done, pls input 'quit':"
 cities = ''
 
 while cities != 'quit':
-    print (input(shown))
+    cities = input(cities)
 
-if cities == 'quit':
-    print (cities)
+    if cities == 'quit':
+        print (cities)
