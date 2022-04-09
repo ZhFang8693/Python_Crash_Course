@@ -1,0 +1,10 @@
+# just test whether i know how to use 'while'
+
+shown = "Show me the city u favor it, and if u done, pls input 'quit':"
+cities = ''
+
+while cities != 'quit':
+    print (input(shown))
+
+if cities == 'quit':
+    print (cities)
