@@ -3,7 +3,8 @@
 prompta = "tell me sth. and i will judge that if u can quit."
 prompta += "\ninput ur content: "
 
-# 设置activation为标志
+# 设置activation为标志,一方面设定activation为true,可以初始化while为活动状态,二是只要activation为true,就不用做其
+# 他任何判断即可让while运行
 activation = True
 while activation :
     showing = input(prompta)
