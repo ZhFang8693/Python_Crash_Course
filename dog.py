@@ -2,7 +2,11 @@
 # 比如绝大多数狗狗,都有名字,年龄.而且基本都会坐下和握手,那么,对于狗狗来说,它们
 # 的共性就是信息(名字和年龄),动作(坐下,握手).
 # 因此我们可以创建以下类:
-class Dog():# Python中,默认首字母大写的名称是指类!
+from turtle import title
+
+# Python中,默认首字母大写的名称是指类!
+class Dog():
+    
     # 初始化狗狗的信息元素,名字和年龄
     def __init__(self,name,age):
     # 类中的函数称之为方法,前面学到的所有函数都适用于方法
@@ -21,10 +25,27 @@ class Dog():# Python中,默认首字母大写的名称是指类!
     # 后该变量被关联到当前创建的实例。
         self.name = name
         self.age = age
-    
+    # 这里的动作,并不需要其他参数,因此只需要一个self形参
     def sit(self):
         print(self.name.title() + 'is now sitting.')
 
     def handshake(self):
-        print(self.name.title() + 'make some handshake.')
+        print(self.name.title() + ' make some handshake.')
     
+    
+my_dog = Dog('fubaobao',2)
+my_dog.sit()
+my_dog.handshake()
+
+first_dog = Dog('zhangpaopao',5)
+second_dog = Dog('fubaobao',2)
+
+print ("My first dog's name is " + first_dog.name.title() + '.')
+print ("My first dog's age is " + str(first_dog.age) + '.')
+first_dog.sit()
+
+print ("My second dog's name is " + second_dog.name.title() + '.')
+print ("My second dog's age is " + str(second_dog.age) + '.')
+second_dog.handshake()
+
+
