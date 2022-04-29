@@ -2,9 +2,6 @@
 # 在类User 中定义一个名 为describe_user() 的方法，它打印用户信息摘要；
 # 再定义一个名为greet_user() 的方法，它向用户发出个性化的问候。
 
-from typing_extensions import Self
-
-
 class User():
 
     def __init__(self, first_name, last_name, **others):
