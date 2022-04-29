@@ -4,15 +4,16 @@
 
 class Restaurant():
 
-    def __init__(self,restaurant,cuisine):
+    def __init__(self, restaurant, cuisine):
         self.restaurant = restaurant
-        self.cuisine =cuisine
+        self.cuisine = cuisine
 
     def open(self):
-        print ('The ' + self.restaurant.title() + ' is opening!')
+        print('The ' + self.restaurant.title() + ' is opening!')
+
 
 YDC = Restaurant('Yu de cuo', 'Fish')
 
-print ("This restaurant's name is " + YDC.restaurant.title())
-print ("And it's cuisine is " + YDC.cuisine.title())
+print("This restaurant's name is " + YDC.restaurant.title())
+print("And it's cuisine is " + YDC.cuisine.title())
 YDC.open()

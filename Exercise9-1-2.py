@@ -13,12 +13,12 @@ class User():
         self.last = last_name
 
         other_describe = {}
-        for key,value in others.items():
-            other_describe [key] = value
+        for key, value in others.items():
+            other_describe[key] = value
 
     def describe_user(self):
-        print (first_name.title() + ' ' + str(last_name.title()))
-        print ("And your others descirbe is: \n" + other_describe)
+        print(self.first.title() + ' ' + str(self.last_name.title()))
+        print("And your others descirbe is: \n" + self.others)
 
     def greet_user():
-        print ("Hello" + str)
+        print("Hello" + str)
