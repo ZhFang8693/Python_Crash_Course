@@ -7,18 +7,25 @@ from typing_extensions import Self
 
 class User():
 
-    def _init_(self, first_name, last_name, **others):
+    def __init__(self, first_name, last_name, **others):
 
         self.first = first_name
         self.last = last_name
 
         other_describe = {}
+        self.other_describe = others
         for key, value in others.items():
             other_describe[key] = value
 
     def describe_user(self):
-        print(self.first.title() + ' ' + str(self.last_name.title()))
-        print("And your others descirbe is: \n" + self.others)
+        print(self.first.title() + ' ' + str(self.last.title()))
+        print("And your others describe is: \n" + str(self.other_describe))
 
-    def greet_user():
-        print("Hello" + str)
+    def greet_user(self):
+        print("Hello" + str(self.first) + str(self.last))
+
+
+my_profile = User('zhang', 'fang', weight='180', height='172')
+
+my_profile.describe_user()
+my_profile.greet_user()

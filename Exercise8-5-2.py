@@ -8,6 +8,6 @@ def my_profile(first_name,last_name,**other_profile):
     return zhfang_profile
 
 Zhfangs = my_profile (
-    'Fang', 'Zhang', weight = '180kg', height = '172cm', favor = 'beer'
+    'Fang', 'Zhang', weight='180kg', height='172cm', favor = 'beer'
 )
 print (Zhfangs)
